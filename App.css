@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.App-logo {
+  height: 7vmin;
+  pointer-events: none;
+}
+
+.Nav {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Font */
+.Nav .font {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-decoration-line: none;
+  color: white;
+}
+
+.Nav .font:hover {
+  color: #ffc81e;
+  text-decoration: underline;
+  text-decoration-line: none;
+}
+
+.button {
+  background-color: #ffc81e;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  min-height: 40px;
+  min-width: 40px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 12px;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button-email {
+  background-color: #ffc81e;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  min-height: 10vh;
+  min-width: 40vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+}
+
+.button-email:hover {
+  background-color: white;
+}
+
+.body-img {
+  height: 100vh;
+  background: no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
+}
+
+footer {
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.footer-message {
+  font-weight: bold;
+  font-size: 0.5rem;
+  color: #545e6f;
+
+  margin: 0 0 0 0.3rem;
+}
+
+.footer-x {
+  font-size: 0.5rem;
+  color: #545e6f;
+  margin: 0.3rem;
+}
+
+.footer-contact {
+  font-size: 0.5rem;
+  color: #545e6f;
+  margin: 0.3rem;
+}
+
+.footer-copyright {
+  font-size: 0.5rem;
+  color: #545e6f;
+  margin: 0.3rem 0.3rem 0 0.3rem;
+}
+.noise {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-image: url("https://i.ibb.co/x3TCktM/645cbb8ec449398255b76326-noise.gif");
+  background-position: 0 0;
+  background-size: auto;
+  pointer-events: none;
+  opacity: 0.05;
+  transition: opacity 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  visibility: visible;
+  /*   원본 페이지 : https://www.rawlab.co */
+}
